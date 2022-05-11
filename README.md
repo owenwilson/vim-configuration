@@ -23,6 +23,14 @@ mkdir ~/.vim
 cp vimrc ~/.vimrc
 ```
 
+```sh
+mkdir -p ~/.vim/autoload && cd ~/.vim/autoload
+```
+
+```sh
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
+
 - Please execute vim in terminal
 - Execute shift + : and add PlugInstall
 
