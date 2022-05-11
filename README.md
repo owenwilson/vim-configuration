@@ -27,7 +27,7 @@ cp vimrc ~/.vimrc
 - Execute shift + : and add PlugInstall
 
 ```sh
-:PlugingInstall
+:PluginInstall
 ```
 
 ## Reference
