@@ -43,6 +43,4 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.c
 - [blog.jez.io](https://blog.jez.io/vim-as-an-ide/#plugin-delimitmate)
 - [vimawesome.com](https://vimawesome.com/plugin/nerdtree-red)
 
-## Donations
-
-- [voluntary donations! devfrustrado](https://www.paypal.com/paypalme/devfrustrado)
+## Thanks!
