@@ -1,4 +1,8 @@
-# My vim configuration example
+# How ton configure my vim editor in ArchLinux
+
+- I configured this version a few years ago, so please review this version if you agree
+
+![vim_configure_v1](./img/vim_configure_v1)
 
 ## Files
 
@@ -16,7 +20,7 @@
 ```sh
 mkdir ~/.vim
 ```
-- Clone repository
+- Clone repository [vim-configuration](https://github.com/owenwilson/vim-configuration.git)
 - Copy vimrc to ~/.vimrc
 
 ```sh
@@ -37,6 +41,8 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.c
 ```sh
 :PluginInstall
 ```
+
+## 
 
 ## Reference
 
