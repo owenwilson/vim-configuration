@@ -2,7 +2,7 @@
 
 - I configured this version a few years ago, so please review this version if you agree
 
-![vim_configure_v1](./img/vim_configure_v1)
+![vim_configure_v1](./img/vim_configure_v1.jpg)
 
 ## Files
 
