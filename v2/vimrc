@@ -33,10 +33,11 @@ Plug 'scrooloose/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 
 "Intellisense and code completion with syntax highlighting
+Plug 'vim-jp/vim-java' 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-let g:coc_global_extensions = ['coc-css', 'coc-html', 'coc-json', 'coc-tsserver', 'coc-java']
-"Plug 'sheerun/vim-polyglot'
-"let g:polyglot_disabled = ['markdown'] "disable markdown
+let g:coc_global_extensions = ['coc-css', 'coc-html', 'coc-json', 'coc-tsserver', 'coc-java', 'coc-pyright', 'coc-go', 'coc-rust-analyzer', 'coc-flutter', 'coc-kotlin', 'coc-phpls']
+Plug 'sheerun/vim-polyglot'
+let g:polyglot_disabled = ['markdown']
 Plug 'plasticboy/vim-markdown'  " Markdown plugin
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 Plug 'preservim/nerdcommenter'
@@ -57,7 +58,8 @@ let NERDTreeStatusline='NERDTree'
 "Automaticaly close nvim if NERDTree is only thing left open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 "File explorer plugin
-map <C-b> :NERDTreeToggle<CR>
+"map <C-b> :NERDTreeToggle<CR>
+nnoremap <silent> <C-b> :NERDTreeToggle<CR>
 "nerd commenter
 noremap <leader>c :NERDCommenterComment<CR>
 "use alt+hjkl to move between split/vsplit panels

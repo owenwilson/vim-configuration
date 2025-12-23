@@ -69,6 +69,63 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.c
 cp v2/vimrc ~/.vimrc
 ```
 
+## Markdown plugin
+
+- Please use the following configuration for markdown, edit vimrc
+
+```
+Plug 'plasticboy/vim-markdown'  " Markdown plugin
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+```
+
+- add custom configuration
+
+```
+" configuration markdown
+let g:mkdp_auto_start = 0           " Do not start automatically
+let g:mkdp_auto_close = 1           " Close when exiting vim
+let g:mkdp_refresh_slow = 0         " Instant update
+let g:mkdp_browser = 'chromium'     " Use browser (o 'chrome', 'brave', 'chromium')
+let g:mkdp_theme = 'dark'           " Themes ('light', 'dark')
+```
+
+- To see a real time-preview of the markdown, run this command in your vim editor, it will open a tab in your web browser and display the markdown file.
+
+- Markdown start preview
+```
+MarkdownPreview
+```
+
+- Markdown stop preview
+```
+MarkdownPreviewStop
+```
+
+- Markdown alternate view
+```
+MarkfownPreviewToggle
+```
+
+## Review status plugin
+
+- install plugin
+
+```
+PlugInstall
+```
+
+- status of plugin
+```
+:PlugStatus
+```
+
+- when you remove a plugin from the vimrc file, run the following a command to delete the folders for those plugins
+
+```
+:PlugClean
+```
+
+
 ## 
 
 ## Reference
