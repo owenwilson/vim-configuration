@@ -4,16 +4,17 @@
 
 ![vim_configure_v1](./img/vim_configure_v1.jpg)
 
-## Files
+## vim configure v1
+### Files
 
 - v1/vimrc
 - v1/vimr-backup.nerdtree 
 
-## Ignore file
+### Ignore file
 
 - v1/vimr-backup.neerdtree
 
-## Configuration
+### Configuration
 
 #### Note: I use archlinux, but it works on all other linux distributions.
 
@@ -41,12 +42,14 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.c
 ```sh
 :PluginInstall
 ```
-## Reference
+### Reference
 
 - [blog.jez.io](https://blog.jez.io/vim-as-an-ide/#plugin-delimitmate)
 - [vimawesome.com](https://vimawesome.com/plugin/nerdtree-red)
 
 ## vim configure v2
+
+![vim_configure_v2](./img/vim_configure_v2.png)
 
 - In this case, I have used new configurations for vim
 - please use folder v2
@@ -69,7 +72,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.c
 cp v2/vimrc ~/.vimrc
 ```
 
-## Markdown plugin
+### Markdown plugin
 
 - Please use the following configuration for markdown, edit vimrc
 
@@ -124,9 +127,6 @@ PlugInstall
 ```
 :PlugClean
 ```
-
-
-## 
 
 ## Reference
 
