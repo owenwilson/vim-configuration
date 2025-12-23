@@ -34,8 +34,11 @@ Plug 'ryanoasis/vim-devicons'
 
 "Intellisense and code completion with syntax highlighting
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-let g:coc_global_extensions = ['coc-css', 'coc-html', 'coc-json', 'coc-tsserver']
-Plug 'sheerun/vim-polyglot'
+let g:coc_global_extensions = ['coc-css', 'coc-html', 'coc-json', 'coc-tsserver', 'coc-java']
+"Plug 'sheerun/vim-polyglot'
+"let g:polyglot_disabled = ['markdown'] "disable markdown
+Plug 'plasticboy/vim-markdown'  " Markdown plugin
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 Plug 'preservim/nerdcommenter'
       
 " Airline
@@ -76,3 +79,10 @@ nnoremap <silent> <C-Down>    :resize -2<CR>
 nnoremap <silent> <C-Up>  :resize +2<CR>
 nnoremap <silent> <C-Left>  :vertical resize -2<CR>
 nnoremap <silent> <C-Right> :vertical resize +2<CR>
+
+" configuration markdown
+let g:mkdp_auto_start = 0           " Do not start automatically
+let g:mkdp_auto_close = 1           " Close when exiting vim
+let g:mkdp_refresh_slow = 0         " Instant update
+let g:mkdp_browser = 'chromium'     " Use browser (o 'chrome', 'brave', 'chromium')
+let g:mkdp_theme = 'dark'           " Themes ('light', 'dark')
