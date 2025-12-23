@@ -6,12 +6,12 @@
 
 ## Files
 
-- vimrc
-- vimr-backup.nerdtree 
+- v1/vimrc
+- v1/vimr-backup.nerdtree 
 
 ## Ignore file
 
-- vimr-backup.neerdtree
+- v1/vimr-backup.neerdtree
 
 ## Configuration
 
@@ -41,12 +41,39 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.c
 ```sh
 :PluginInstall
 ```
+## Reference
+
+- [blog.jez.io](https://blog.jez.io/vim-as-an-ide/#plugin-delimitmate)
+- [vimawesome.com](https://vimawesome.com/plugin/nerdtree-red)
+
+## vim configure v2
+
+- In this case, I have used new configurations for vim
+- please use folder v2
+
+```
+mkdir -p ~/.vim/plugged 
+```
+
+- clone repository [vim-configuration](https://github.com/owenwilson/vim-configuration.git)
+
+
+```
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
+
+- copy vimrc configuration
+
+
+```
+cp v2/vimrc ~/.vimrc
+```
 
 ## 
 
 ## Reference
 
-- [blog.jez.io](https://blog.jez.io/vim-as-an-ide/#plugin-delimitmate)
-- [vimawesome.com](https://vimawesome.com/plugin/nerdtree-red)
+- [setting-up-vim-as-a-alternative](https://mehmehsloth.medium.com/setting-up-vim-as-a-alternative-to-any-ide-for-development-fff3ceaa0359)
+- [vim-plug#installation](https://github.com/junegunn/vim-plug#installation)
 
 ## Thanks!
