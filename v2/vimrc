@@ -46,6 +46,16 @@ Plug 'preservim/nerdcommenter'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
+" LiveServer
+Plug 'https://github.com/wolandark/vim-live-server.git'
+
+" Golang
+Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
+" Completion tool for golang
+Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
+" Golang completion tool for deoplete
+Plug 'zchee/deoplete-go', { 'do': 'make'}
+
 call plug#end()
 
 colorscheme space-vim-dark
@@ -75,6 +85,8 @@ nnoremap <A-l> <C-w>l
 map <Esc><C-c> <CR>
 inoremap jk <Esc>
 inoremap kj <Esc>
+" Make Enter accept the autocomplete suggestion.
+inoremap <silent><expr> <CR> pumvisible() ? coc#_select_confirm() : "\<CR>"
 " alternater way to save
 nnoremap <silent> <C-s> :w<CR>
 nnoremap <silent> <C-Down>    :resize -2<CR>
