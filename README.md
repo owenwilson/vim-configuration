@@ -40,7 +40,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.c
 - Execute shift + : and add PlugInstall
 
 ```sh
-:PluginInstall
+:PlugInstall
 ```
 ### Reference
 
