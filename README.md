@@ -130,6 +130,12 @@ PlugInstall
 
 ## terraform plugin
 
+- install terraform language server
+
+```sh
+sudo dnf install -y terraform-ls
+```
+
 - add plugin on your vimrc file
 
 ```sh
@@ -163,4 +169,4 @@ Plug 'hashivim/vim-terraform'
 
 - [setting-up-vim-as-a-alternative](https://mehmehsloth.medium.com/setting-up-vim-as-a-alternative-to-any-ide-for-development-fff3ceaa0359)
 - [vim-plug#installation](https://github.com/junegunn/vim-plug#installation)
-
+- [terrfaorm language server](https://github.com/hashicorp/terraform-ls)
