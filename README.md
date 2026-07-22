@@ -108,7 +108,7 @@ MarkdownPreviewStop
 ```
 MarkfownPreviewToggle
 ```
-
+ 
 ## Review status plugin
 
 - install plugin
@@ -128,9 +128,39 @@ PlugInstall
 :PlugClean
 ```
 
+## terraform plugin
+
+- add plugin on your vimrc file
+
+```sh
+" Terraform
+Plug 'hashivim/vim-terraform'
+```
+
+- add coc config
+
+```sh
+:CocConfig
+```
+
+- paste the following json
+
+```json
+{
+  "languageserver": {
+    "terraform": {
+      "command": "terraform-ls",
+      "args": ["serve"],
+      "filetypes": ["terraform", "tf"],
+      "initializationOptions": {},
+      "settings": {}
+    }
+  }
+}
+```
+
 ## Reference
 
 - [setting-up-vim-as-a-alternative](https://mehmehsloth.medium.com/setting-up-vim-as-a-alternative-to-any-ide-for-development-fff3ceaa0359)
 - [vim-plug#installation](https://github.com/junegunn/vim-plug#installation)
 
-## Thanks!

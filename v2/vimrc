@@ -5,7 +5,7 @@ set shiftwidth=4
 set expandtab
 set wildmenu 
 set smartindent
-set rnu relativenumber "relative line number
+" set rnu relativenumber "relative line number
 set nowrap
 set smartcase 
 set noswapfile "no swap file (vim creates them by default) 
@@ -16,6 +16,7 @@ set cursorline
 set incsearch
 set formatoptions-=cro
 set background=dark
+set number
 
 call plug#begin("~/.vim/plugged")
 " add plugins here
@@ -32,7 +33,7 @@ Plug 'lilydjwg/colorizer'
 Plug 'scrooloose/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 
-"Intellisense and code completion with syntax highlighting
+" Intellisense and code completion with syntax highlighting
 Plug 'vim-jp/vim-java' 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 let g:coc_global_extensions = ['coc-css', 'coc-html', 'coc-json', 'coc-tsserver', 'coc-java', 'coc-pyright', 'coc-go', 'coc-rust-analyzer', 'coc-flutter', 'coc-kotlin', 'coc-phpls']
@@ -56,6 +57,9 @@ Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
 " Golang completion tool for deoplete
 Plug 'zchee/deoplete-go', { 'do': 'make'}
 
+" Terraform
+Plug 'hashivim/vim-terraform'
+
 call plug#end()
 
 colorscheme space-vim-dark
@@ -65,14 +69,14 @@ let g:NERDTreeShowHidden = 1
 let g:NERDTreeMinimalUI = 0
 let g:NERDTreeIgnore = ['node_modules']
 let NERDTreeStatusline='NERDTree'
-"Automaticaly close nvim if NERDTree is only thing left open
+" Automaticaly close nvim if NERDTree is only thing left open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-"File explorer plugin
-"map <C-b> :NERDTreeToggle<CR>
+" File explorer plugin
+" map <C-b> :NERDTreeToggle<CR>
 nnoremap <silent> <C-b> :NERDTreeToggle<CR>
-"nerd commenter
+" nerd commenter
 noremap <leader>c :NERDCommenterComment<CR>
-"use alt+hjkl to move between split/vsplit panels
+" use alt+hjkl to move between split/vsplit panels
 tnoremap <A-h> <C-\><C-n><C-w>h
 tnoremap <A-j> <C-\><C-n><C-w>j
 tnoremap <A-k> <C-\><C-n><C-w>k
@@ -98,5 +102,20 @@ nnoremap <silent> <C-Right> :vertical resize +2<CR>
 let g:mkdp_auto_start = 0           " Do not start automatically
 let g:mkdp_auto_close = 1           " Close when exiting vim
 let g:mkdp_refresh_slow = 0         " Instant update
-let g:mkdp_browser = 'chromium'     " Use browser (o 'chrome', 'brave', 'chromium')
+let g:mkdp_browser = 'chromium-browser'     " Use browser (o 'chrome', 'brave', 'chromium')
 let g:mkdp_theme = 'dark'           " Themes ('light', 'dark')
+
+" configuration terraform 
+" Enable automatic code alignment/formatting on file save
+let g:terraform_fmt_on_save = 1
+
+" Automatically align settings blocks using tabular maps
+let g:terraform_align = 1
+" go to the definition of the module or resource under the cursor
+nmap <silent> gd <Plug>(coc-definition)
+" show the documentation or resource type
+nnoremap <silent> K :call CocActionAsync('doHover')<CR>
+" show the list of errors in the current file
+nmap <silent> [g <Plug>(coc-diagnostic-prev)
+nmap <silent> ]g <Plug>(coc-diagnostic-next)
+
