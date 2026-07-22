@@ -170,3 +170,4 @@ Plug 'hashivim/vim-terraform'
 - [setting-up-vim-as-a-alternative](https://mehmehsloth.medium.com/setting-up-vim-as-a-alternative-to-any-ide-for-development-fff3ceaa0359)
 - [vim-plug#installation](https://github.com/junegunn/vim-plug#installation)
 - [terrfaorm language server](https://github.com/hashicorp/terraform-ls)
+- [boost your productivity with terraform autocompletion in vim](https://dev.to/rosesecurity/boost-your-productivity-with-terraform-autocompletion-in-vim-4lik)
