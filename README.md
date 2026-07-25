@@ -165,6 +165,24 @@ Plug 'hashivim/vim-terraform'
 }
 ```
 
+## coc-kotlin
+
+- when you open a .kts file, press the 1 key to allow Vim to download the kotlin dependencies.
+- It's possible that when you open a .kts file, Vim will freeze, but you should type the number 1.
+
+```sh
+key 1
+```
+
+## generate logs
+
+- if you need logs, you can try the following command
+
+```sh
+vim -V5_log_vim.logs /path/file.kts"
+```
+
+
 ## Reference
 
 - [setting-up-vim-as-a-alternative](https://mehmehsloth.medium.com/setting-up-vim-as-a-alternative-to-any-ide-for-development-fff3ceaa0359)
