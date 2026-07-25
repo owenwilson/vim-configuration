@@ -69,13 +69,17 @@ let g:NERDTreeShowHidden = 1
 let g:NERDTreeMinimalUI = 0
 let g:NERDTreeIgnore = ['node_modules']
 let NERDTreeStatusline='NERDTree'
+
 " Automaticaly close nvim if NERDTree is only thing left open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
 " File explorer plugin
 " map <C-b> :NERDTreeToggle<CR>
 nnoremap <silent> <C-b> :NERDTreeToggle<CR>
+
 " nerd commenter
 noremap <leader>c :NERDCommenterComment<CR>
+
 " use alt+hjkl to move between split/vsplit panels
 tnoremap <A-h> <C-\><C-n><C-w>h
 tnoremap <A-j> <C-\><C-n><C-w>j
