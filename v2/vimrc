@@ -18,6 +18,12 @@ set formatoptions-=cro
 set background=dark
 set number
 
+" golang path environments
+let $GOENV_ROOT = $HOME . '/.goenv'
+let $PATH = $GOENV_ROOT . '/shims:' . $GOENV_ROOT . '/bin:' . $PATH
+let $GOPATH = $HOME . '/go'
+let $GOBIN = $GOPATH . '/bin'
+
 call plug#begin("~/.vim/plugged")
 " add plugins here
 Plug 'ps173/dadara' 
@@ -25,7 +31,7 @@ Plug 'gruvbox-community/gruvbox'
 Plug 'liuchengxu/space-vim-dark'
 Plug 'dracula/vim', { 'as': 'dracula' }
 
-"CSS properties and color selector
+" CSS properties and color selector
 Plug 'KabbAmine/vCoolor.vim'
 Plug 'lilydjwg/colorizer'
 
@@ -64,7 +70,7 @@ call plug#end()
 
 colorscheme space-vim-dark
 
-"NERD TREE AND ICONS
+" NERD TREE AND ICONS
 let g:NERDTreeShowHidden = 1
 let g:NERDTreeMinimalUI = 0
 let g:NERDTreeIgnore = ['node_modules']
