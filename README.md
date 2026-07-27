@@ -174,6 +174,21 @@ Plug 'hashivim/vim-terraform'
 key 1
 ```
 
+## golang
+
+- [manage diferents versions of go](https://medium.com/@tinchoram/c%C3%B3mo-administrar-diferentes-versiones-de-golang-con-goenv-ca4f2cbb84c5)
+- [goenv github](https://github.com/go-nv/goenv/tree/master)
+- [goenv installation](https://github.com/go-nv/goenv/blob/master/INSTALL.md)
+- When setting up Go, be sure to add the following:
+
+```sh
+" golang path environments
+let $GOENV_ROOT = $HOME . '/.goenv'
+let $PATH = $GOENV_ROOT . '/shims:' . $GOENV_ROOT . '/bin:' . $PATH
+let $GOPATH = $HOME . '/go'
+let $GOBIN = $GOPATH . '/bin'
+```
+
 ## generate logs
 
 - if you need logs, you can try the following command
