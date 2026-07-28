@@ -204,3 +204,4 @@ vim -V5_log_vim.logs /path/file.kts"
 - [vim-plug#installation](https://github.com/junegunn/vim-plug#installation)
 - [terrfaorm language server](https://github.com/hashicorp/terraform-ls)
 - [boost your productivity with terraform autocompletion in vim](https://dev.to/rosesecurity/boost-your-productivity-with-terraform-autocompletion-in-vim-4lik)
+- [coc nvim wiki](https://github.com/neoclide/coc.nvim/wiki)
